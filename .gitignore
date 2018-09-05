@@ -3,6 +3,7 @@
 
 # Log file
 *.log
+local.properties
 
 # BlueJ files
 *.ctxt
