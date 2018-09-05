@@ -1,5 +1,5 @@
 <resources>
-    <string name="s_app_name">Control G</string>
+    <string name="app_name">Control G</string>
     <string name="title_activity_login">Loguin</string>
 
     <!-- Strings related to login -->
