@@ -23,7 +23,14 @@
         </activity>
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".InventoryActivity" />
+        <activity android:name=".SuppliesActivity" />
+        <activity android:name=".AnimalsActivity" />
+        <activity android:name=".BreedingActivity" />
+        <activity android:name=".DiaryActivity" />
+        <activity android:name=".ProductActivity"></activity>
     </application>
 
 </manifest>
