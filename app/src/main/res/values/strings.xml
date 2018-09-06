@@ -1,6 +1,16 @@
 <resources>
+
+    <!-- Strings related to Title Activitys -->
     <string name="app_name">Control G</string>
     <string name="title_activity_login">Loguin</string>
+    <string name="title_activity_menu">Menu</string>
+
+    <!-- Strings related to Menu -->
+    <string name="s_inventory">Inventory</string>
+    <string name="s_breeding">Breeding</string>
+    <string name="s_diary">Diary</string>
+    <string name="s_product">Product</string>
+
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>

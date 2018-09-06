@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Control G</string>
+    <string name="title_activity_login">Usuario</string>
+    <string name="s_inventory">Inventario</string>
+    <string name="s_breeding">Cria</string>
+    <string name="s_diary">Agenda</string>
+    <string name="s_product">Producto</string>
+    <string name="prompt_email">Correo</string>
+    <string name="prompt_password">Contraseña</string>
+    <string name="action_sign_in">Iniciar sesión o Registrar</string>
+    <string name="action_sign_in_short">Iniciar Sesión</string>
+    <string name="error_invalid_email">Correo invalido</string>
+    <string name="error_invalid_password">Contraseña corta</string>
+    <string name="error_incorrect_password">Contraseña incorrecta</string>
+    <string name="error_field_required">Campo es</string>
+    <string name="permission_rationale">Requiere permisos de los contactos</string>
+    <string name="title_activity_menu">Menu</string>
+</resources>
