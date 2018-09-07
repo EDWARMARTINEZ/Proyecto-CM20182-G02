@@ -21,8 +21,9 @@
                 android:id="@+id/imgBreeding"
                 android:layout_width="114dp"
                 android:layout_height="match_parent"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/cow4"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/cow2"
                 tools:layout_editor_absoluteX="41dp"
                 tools:layout_editor_absoluteY="28dp" />
 
@@ -30,7 +31,8 @@
                 android:id="@+id/imgDiary"
                 android:layout_width="89dp"
                 android:layout_height="153dp"
-                android:scaleType="centerCrop"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
                 app:srcCompat="@drawable/diary2"
                 tools:layout_editor_absoluteX="41dp"
                 tools:layout_editor_absoluteY="28dp" />
@@ -75,7 +77,8 @@
                 android:id="@+id/imgProduct"
                 android:layout_width="146dp"
                 android:layout_height="153dp"
-                android:scaleType="centerCrop"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
                 app:srcCompat="@drawable/product"
                 tools:layout_editor_absoluteX="35dp"
                 tools:layout_editor_absoluteY="192dp" />
@@ -84,7 +87,8 @@
                 android:id="@+id/imgInventory"
                 android:layout_width="146dp"
                 android:layout_height="match_parent"
-                android:scaleType="centerCrop"
+                android:layout_margin="5dp"
+                android:scaleType="fitCenter"
                 app:srcCompat="@drawable/inventory"
                 tools:layout_editor_absoluteX="202dp"
                 tools:layout_editor_absoluteY="191dp" />

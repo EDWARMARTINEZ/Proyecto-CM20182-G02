@@ -8,12 +8,13 @@
 
     <ImageView
         android:id="@+id/imgCow"
-        android:layout_width="326dp"
-        android:layout_height="345dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cow" />
+        app:srcCompat="@drawable/cow4" />
 </android.support.constraint.ConstraintLayout>
