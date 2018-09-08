@@ -19,14 +19,17 @@ class LoginActivity : AppCompatActivity() {
         val buttons = findViewById<Button>(R.id.email_sign_in_button)
 
         buttons.setOnClickListener{
-            view -> cargarActivityMenu()
+            view -> cargarActivityNavigation()
         }
 
     }
 
-    private fun cargarActivityMenu() {
-        val miIntent: Intent = Intent(this, MenuActivity::class.java)
+    private fun cargarActivityNavigation() {
+        val miIntent: Intent = Intent(this, NavigationDrawerActivity::class.java)
         startActivity(miIntent)
     }
+
+
+
 
 }

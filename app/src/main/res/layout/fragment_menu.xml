@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgBreeding"
+                android:layout_width="114dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/cow2"
+                android:scaleType="fitCenter"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="28dp" />
+
+            <ImageView
+                android:id="@+id/imgDiary"
+                android:layout_width="89dp"
+                android:layout_height="153dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/diary2"
+                android:scaleType="fitCenter"
+                tools:layout_editor_absoluteX="41dp"
+                tools:layout_editor_absoluteY="28dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+
+            <TextView
+                android:id="@+id/txtBreeding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/s_breeding"
+                android:textColor="@android:color/background_dark"
+                android:textColorLink="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="76dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <TextView
+                android:id="@+id/txtDiary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/s_diary"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="241dp"
+                tools:layout_editor_absoluteY="151dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="146dp"
+                android:layout_height="153dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/product"
+                android:scaleType="fitCenter"
+                tools:layout_editor_absoluteX="35dp"
+                tools:layout_editor_absoluteY="192dp" />
+
+            <ImageView
+                android:id="@+id/imgInventory"
+                android:layout_width="146dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/inventory"
+                android:scaleType="fitCenter"
+                tools:layout_editor_absoluteX="202dp"
+                tools:layout_editor_absoluteY="191dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/s_product"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="241dp"
+                tools:layout_editor_absoluteY="331dp" />
+
+            <TextView
+                android:id="@+id/txtInventory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/s_inventory"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="64dp"
+                tools:layout_editor_absoluteY="331dp" />
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>

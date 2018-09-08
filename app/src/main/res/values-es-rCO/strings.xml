@@ -16,4 +16,5 @@
     <string name="error_field_required">Campo es</string>
     <string name="permission_rationale">Requiere permisos de los contactos</string>
     <string name="title_activity_menu">Menu</string>
+    <string name="s_close">Salir</string>
 </resources>

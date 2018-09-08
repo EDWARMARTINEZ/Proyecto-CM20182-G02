@@ -21,8 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".LoginActivity"
+        <activity
+            android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".InventoryActivity" />
@@ -30,7 +30,11 @@
         <activity android:name=".AnimalsActivity" />
         <activity android:name=".BreedingActivity" />
         <activity android:name=".DiaryActivity" />
-        <activity android:name=".ProductActivity"></activity>
+        <activity android:name=".ProductActivity" />
+        <activity
+            android:name=".NavigationDrawerActivity"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
