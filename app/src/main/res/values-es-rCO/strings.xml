@@ -17,4 +17,8 @@
     <string name="permission_rationale">Requiere permisos de los contactos</string>
     <string name="title_activity_menu">Menu</string>
     <string name="s_close">Salir</string>
+    <string name="s_menu">Menu</string>
+    <string name="s_animals">Animales</string>
+    <string name="s_supplies">Insumos</string>
+    <string name="s_university">udea.edu.co</string>
 </resources>

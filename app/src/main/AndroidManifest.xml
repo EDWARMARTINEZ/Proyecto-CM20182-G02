@@ -34,6 +34,10 @@
         <activity
             android:name=".NavigationDrawerActivity"
             android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InventoryActivityTabbed"
+            android:label="@string/title_activity_inventory_tabbed"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

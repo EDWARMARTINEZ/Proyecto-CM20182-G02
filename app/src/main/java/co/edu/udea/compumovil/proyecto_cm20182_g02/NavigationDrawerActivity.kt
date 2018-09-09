@@ -1,6 +1,7 @@
 package co.edu.udea.compumovil.proyecto_cm20182_g02
 
 import android.app.Fragment
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -9,6 +10,7 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import kotlinx.android.synthetic.main.activity_navigation_drawer.*
 import kotlinx.android.synthetic.main.app_bar_navigation_drawer.*
 import kotlinx.android.synthetic.main.content_navigation_drawer.*
@@ -46,14 +48,6 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
     }
 
 
-    private fun fragmentMenuCargar() {
-        val fm = supportFragmentManager.beginTransaction()
-        //val fragm1 = TemFragment()
-        fm.replace(R.id.content_fragment, MenuFragment())
-        fm.commit()
-
-    }
-
 
     override fun onBackPressed() {
         if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
@@ -70,13 +64,13 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        when (item.itemId) {
-            R.id.action_close -> return true
-            else -> return super.onOptionsItemSelected(item)
+
+        val id = item.itemId
+
+        if (id == R.id.action_close) { //salir
+            finish()
         }
+        return super.onOptionsItemSelected(item)
     }
 /*Selecionar un elmento del menu    */
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -91,7 +85,7 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
 
             }
             R.id.nav_inventory -> {
-                fragmentMenuCargar()
+                cargarInventoryActivityTabbed()
             }
             R.id.nav_product -> {
 
@@ -108,6 +102,30 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
         return true
     }
 
+
+    fun onClick(view: View) {
+
+        when (view.id) {
+            R.id.imgInventory -> cargarInventoryActivityTabbed()
+
+        //    R.id.imgBebidaC -> cargarActivityBebida()
+        }
+
+    }
+
+
+    private fun fragmentMenuCargar() { ///muestra de cargar fragmento no lo estoy utilizando
+        val fm = supportFragmentManager.beginTransaction()
+        fm.replace(R.id.content_fragment, MenuFragment())
+        fm.commit()
+    }
+
+
+    private fun cargarInventoryActivityTabbed() {
+        val miIntent: Intent = Intent(this, InventoryActivityTabbed::class.java)
+        startActivity(miIntent)
+
+    }
 
 
 }

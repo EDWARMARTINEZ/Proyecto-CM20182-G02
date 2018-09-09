@@ -5,12 +5,17 @@
     <string name="s_university">udea.edu.co</string>
 
 
+    <!-- Strings related to Inventory -->
+    <string name="s_animals">Animals</string>
+    <string name="s_supplies">Supplies</string>
+
     <!-- Strings related to Title Activitys -->
     <string name="app_name">Control G</string>
     <string name="title_activity_login">Loguin</string>
     <string name="title_activity_menu">Menu</string>
 
     <!-- Strings related to Menu -->
+    <string name="s_menu">Menu</string>
     <string name="s_inventory">Inventory</string>
     <string name="s_breeding">Breeding</string>
     <string name="s_diary">Diary</string>
@@ -47,5 +52,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_inventory_tabbed">InventoryActivityTabbed</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 
 </resources>
