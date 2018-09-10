@@ -1,6 +1,5 @@
 package co.edu.udea.compumovil.proyecto_cm20182_g02
 
-import android.app.Fragment
 import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
@@ -11,11 +10,13 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.ImageView
 import kotlinx.android.synthetic.main.activity_navigation_drawer.*
 import kotlinx.android.synthetic.main.app_bar_navigation_drawer.*
-import kotlinx.android.synthetic.main.content_navigation_drawer.*
+import kotlinx.android.synthetic.main.nav_header_navigation_drawer.*
 
 class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+
 
 
 
@@ -25,13 +26,8 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
         setContentView(R.layout.activity_navigation_drawer)
         setSupportActionBar(toolbar)
 
-        /*
-        boton.setOnClickListener{
-            fragmentMenuCargar()
-        }
-        */
-
         fragmentMenuCargar()
+
 
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
@@ -43,6 +39,7 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
         drawer_layout.addDrawerListener(toggle)
         toggle.syncState()
 
+
         nav_view.setNavigationItemSelectedListener(this)
 
     }
@@ -50,6 +47,7 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
 
 
     override fun onBackPressed() {
+
         if (drawer_layout.isDrawerOpen(GravityCompat.START)) {
             drawer_layout.closeDrawer(GravityCompat.START)
         } else {
@@ -58,6 +56,10 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
+
+        //Menu
+        selectionMenuImagen()
+
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.navigation_drawer, menu)
         return true
@@ -85,7 +87,7 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
 
             }
             R.id.nav_inventory -> {
-                cargarInventoryActivityTabbed()
+
             }
             R.id.nav_product -> {
 
@@ -103,13 +105,25 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
     }
 
 
-    fun onClick(view: View) {
+    fun selectionMenuImagen() {
 
-        when (view.id) {
-            R.id.imgInventory -> cargarInventoryActivityTabbed()
+        val imgventory = findViewById<ImageView>(R.id.imgInventory)
+        val imgdiary = findViewById<ImageView>(R.id.imgDiary)
+        val imgbreeding = findViewById<ImageView>(R.id.imgBreeding)
 
-        //    R.id.imgBebidaC -> cargarActivityBebida()
+        imgventory.setOnClickListener{
+            view -> menuInventoryActivityTabbed()
         }
+
+        imgdiary.setOnClickListener{
+            view -> menuDiaryActivityTabbed()
+        }
+
+
+        imgbreeding.setOnClickListener{
+            view -> menuBreedingActivityTabbed()
+        }
+
 
     }
 
@@ -121,11 +135,19 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
     }
 
 
-    private fun cargarInventoryActivityTabbed() {
+    private fun menuInventoryActivityTabbed() {
         val miIntent: Intent = Intent(this, InventoryActivityTabbed::class.java)
         startActivity(miIntent)
-
     }
 
+    private fun menuDiaryActivityTabbed() {
+        val miIntent: Intent = Intent(this, DiaryActivityTabbed::class.java)
+        startActivity(miIntent)
+    }
+
+    private fun menuBreedingActivityTabbed() {
+        val miIntent: Intent = Intent(this, BreedingActivityTabbed::class.java)
+        startActivity(miIntent)
+    }
 
 }

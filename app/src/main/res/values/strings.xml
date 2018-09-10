@@ -5,6 +5,16 @@
     <string name="s_university">udea.edu.co</string>
 
 
+    <!-- Strings related to Breeding -->
+    <string name="s_health_plan">Health plan</string>
+    <string name="s_concentrated">Concentrated</string>
+
+
+
+    <!-- Strings related to Diary -->
+    <string name="s_vaccination">Vaccination</string>
+    <string name="s_pathology">Pathology</string>
+
     <!-- Strings related to Inventory -->
     <string name="s_animals">Animals</string>
     <string name="s_supplies">Supplies</string>
@@ -25,6 +35,13 @@
     <!-- Strings Activity Menu - Navigation_drawer.xml -->
     <string name="s_close">close</string>
     <string name="s_option">Optiones</string>
+
+
+
+    <!-- Strings Fragment Animals -->
+    <string name="s_lote_animal">Lot</string>
+    <string name="s_name_animal">Name</string>
+
 
 
     <!-- Strings Activity Loguin -->
@@ -57,5 +74,8 @@
     <string name="tab_text_2">Tab 2</string>
     <string name="tab_text_3">Tab 3</string>
     <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_diary_tabbed">DiaryActivityTabbed</string>
+    <string name="title_activity_tabbed_breeding">Tabbed</string>
+    <string name="title_activity_breeding_tabbed">BreedingActivityTabbed</string>
 
 </resources>

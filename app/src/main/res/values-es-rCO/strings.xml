@@ -21,4 +21,12 @@
     <string name="s_animals">Animales</string>
     <string name="s_supplies">Insumos</string>
     <string name="s_university">udea.edu.co</string>
+    <string name="s_vaccination">Vacunacón</string>
+    <string name="s_option">Opciones</string>
+    <string name="s_pathology">Patología</string>
+    <string name="s_forage">Forraje</string>
+    <string name="s_concentrated">Concentrado</string>
+    <string name="s_health_plan">Plan sanitario</string>
+    <string name="s_lote_animal">Lote</string>
+    <string name="s_name_animal">Nombre</string>
 </resources>

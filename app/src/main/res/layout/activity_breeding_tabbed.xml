@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".InventoryActivityTabbed">
+    tools:context=".BreedingActivityTabbed">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
@@ -23,7 +23,7 @@
             android:background="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="@string/s_inventory">
+            app:title="@string/s_breeding">
 
         </android.support.v7.widget.Toolbar>
 
@@ -33,18 +33,24 @@
             android:layout_height="wrap_content">
 
             <android.support.design.widget.TabItem
-                android:id="@+id/tabAnimales"
+                android:id="@+id/tabHealth_plan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/s_animals" />
+                android:text="@string/s_health_plan" />
 
             <android.support.design.widget.TabItem
-                android:id="@+id/tabSupplies"
+                android:id="@+id/tabPathology"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/s_supplies" />
+                android:text="@string/s_pathology" />
 
-             </android.support.design.widget.TabLayout>
+            <android.support.design.widget.TabItem
+                android:id="@+id/tabConcentrated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/s_concentrated" />
+
+        </android.support.design.widget.TabLayout>
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v4.view.ViewPager

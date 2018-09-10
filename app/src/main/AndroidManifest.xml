@@ -38,6 +38,24 @@
         <activity
             android:name=".InventoryActivityTabbed"
             android:label="@string/title_activity_inventory_tabbed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DiaryActivityTabbed"
+            android:label="@string/title_activity_diary_tabbed"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TabbedBreedingActivity"
+            android:label="@string/title_activity_tabbed_breeding"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BreedingActivityTabbed"
+            android:label="@string/title_activity_breeding_tabbed"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
