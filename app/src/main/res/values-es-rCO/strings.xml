@@ -29,4 +29,10 @@
     <string name="s_health_plan">Plan sanitario</string>
     <string name="s_lote_animal">Lote</string>
     <string name="s_name_animal">Nombre</string>
+    <string name="s_income_type_animal">Tipo de ingreso</string>
+    <string name="s_birth_date">Fecha de nacimiento</string>
+    <string name="s_numero">Número o Chapeta</string>
+    <string name="s_observation">Observación</string>
+    <string name="s_genero_animal">Género</string>
+    <string name="s_race_animal">Raza</string>
 </resources>

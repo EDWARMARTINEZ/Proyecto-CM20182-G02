@@ -41,7 +41,12 @@
     <!-- Strings Fragment Animals -->
     <string name="s_lote_animal">Lot</string>
     <string name="s_name_animal">Name</string>
-
+    <string name="s_gender_animal">Gender</string>
+    <string name="s_race_animal">Race</string>
+    <string name="s_income_type_animal">Income type</string>
+    <string name="s_birth_date">Birth date</string>
+    <string name="s_numero">Number</string>
+    <string name="s_observation">Obervation</string>
 
 
     <!-- Strings Activity Loguin -->

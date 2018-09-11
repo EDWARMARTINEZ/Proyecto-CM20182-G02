@@ -20,6 +20,7 @@
                 android:id="@+id/lote_animals_inventory"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
                 android:hint="@string/s_lote_animal"
                 android:maxLines="1"
                 android:singleLine="true" />
@@ -29,7 +30,6 @@
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <EditText
                 android:id="@+id/name_animls_inventory"
                 android:layout_width="match_parent"
@@ -39,8 +39,97 @@
                 android:imeOptions="actionUnspecified"
                 android:maxLines="1"
                 android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/gerder_animls_inventory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/s_gender_animal"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/race_animls_inventory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/s_race_animal"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/Type_of_income_animls_inventory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/s_income_type_animal"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:maxLines="1"
+                android:singleLine="true" />
 
         </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/birth_date_animls_inventory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/s_birth_date"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/number_or_Chapeta_animls_inventory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/s_numero"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/observation_animls_inventory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/s_observation"
+                android:imeActionId="6"
+                android:imeOptions="actionUnspecified"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
 
     </LinearLayout>
 
