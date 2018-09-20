@@ -78,9 +78,6 @@ class DiaryActivityTabbed : AppCompatActivity() {
         override fun getItem(position: Int): Fragment? {
 
             when(position){
-                0 -> {
-                    return AnimalsFragment() //fragmento animales
-                }
                 1 -> {
 
                     return SuppliesFragment() //Fragmentos insumos
@@ -92,7 +89,7 @@ class DiaryActivityTabbed : AppCompatActivity() {
 
         override fun getCount(): Int {
             // Show 3 total pages.
-            return 2
+            return 1
 
         }
     }

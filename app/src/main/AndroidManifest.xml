@@ -24,21 +24,14 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".InventoryActivity" />
-        <activity android:name=".SuppliesActivity" />
-        <activity android:name=".AnimalsActivity" />
-        <activity android:name=".BreedingActivity" />
-        <activity android:name=".DiaryActivity" />
-        <activity android:name=".ProductActivity" />
         <activity
             android:name=".NavigationDrawerActivity"
             android:label="@string/title_activity_navigation_drawer"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".InventoryActivityTabbed"
-            android:label="@string/title_activity_inventory_tabbed"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:name=".InventoryActivity"
+            android:parentActivityName=".NavigationDrawerActivity" />
+
         <activity
             android:name=".DiaryActivityTabbed"
             android:label="@string/title_activity_diary_tabbed"
@@ -49,14 +42,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".TabbedBreedingActivity"
-            android:label="@string/title_activity_tabbed_breeding"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".BreedingActivityTabbed"
             android:label="@string/title_activity_breeding_tabbed"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".InventoryAnimalsActivity"
+        android:parentActivityName=".InventoryActivity" />
+
     </application>
 
 </manifest>

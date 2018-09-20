@@ -79,14 +79,10 @@ class BreedingActivityTabbed : AppCompatActivity() {
 
             when(position){
                 0 -> {
-                    return AnimalsFragment() //fragmento animales
-                }
-                1 -> {
-
                     return SuppliesFragment() //Fragmentos insumos
 
                 }
-                2 -> {
+                1 -> {
 
                     return SuppliesFragment() //Fragmentos insumos
 
@@ -97,7 +93,7 @@ class BreedingActivityTabbed : AppCompatActivity() {
 
         override fun getCount(): Int {
             // Show 3 total pages.
-            return 3
+            return 2
 
         }
     }

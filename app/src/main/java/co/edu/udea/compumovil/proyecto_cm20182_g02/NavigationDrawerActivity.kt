@@ -29,10 +29,12 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
         fragmentMenuCargar()
 
 
+     /*
         fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
+*/
 
         val toggle = ActionBarDrawerToggle(
                 this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close)
@@ -71,6 +73,10 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
 
         if (id == R.id.action_close) { //salir
             finish()
+        }else if(id == R.id.action_notification)
+        {
+
+
         }
         return super.onOptionsItemSelected(item)
     }
@@ -112,7 +118,7 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
         val imgbreeding = findViewById<ImageView>(R.id.imgBreeding)
 
         imgventory.setOnClickListener{
-            view -> menuInventoryActivityTabbed()
+            view -> menuInventoryActivity()
         }
 
         imgdiary.setOnClickListener{
@@ -124,7 +130,6 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
             view -> menuBreedingActivityTabbed()
         }
 
-
     }
 
 
@@ -135,19 +140,23 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
     }
 
 
-    private fun menuInventoryActivityTabbed() {
-        val miIntent: Intent = Intent(this, InventoryActivityTabbed::class.java)
+    private fun menuInventoryActivity() {
+        val miIntent: Intent = Intent(this, InventoryActivity::class.java)
         startActivity(miIntent)
     }
+
 
     private fun menuDiaryActivityTabbed() {
         val miIntent: Intent = Intent(this, DiaryActivityTabbed::class.java)
         startActivity(miIntent)
     }
 
+
     private fun menuBreedingActivityTabbed() {
         val miIntent: Intent = Intent(this, BreedingActivityTabbed::class.java)
         startActivity(miIntent)
     }
+
+
 
 }
