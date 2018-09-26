@@ -80,5 +80,6 @@
     <string name="title_activity_diary_tabbed">DiaryActivityTabbed</string>
     <string name="title_activity_tabbed_breeding">Tabbed</string>
     <string name="title_activity_breeding_tabbed">BreedingActivityTabbed</string>
+    <string name="title_activity__diary_tabbed">Activity_Diary_tabbed</string>
 
 </resources>

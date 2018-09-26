@@ -2,18 +2,16 @@ package co.edu.udea.compumovil.proyecto_cm20182_g02
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
 import android.support.v4.view.GravityCompat
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.ImageView
 import kotlinx.android.synthetic.main.activity_navigation_drawer.*
 import kotlinx.android.synthetic.main.app_bar_navigation_drawer.*
-import kotlinx.android.synthetic.main.nav_header_navigation_drawer.*
+
 
 class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -118,16 +116,16 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
         val imgbreeding = findViewById<ImageView>(R.id.imgBreeding)
 
         imgventory.setOnClickListener{
-            view -> menuInventoryActivity()
+            menuInventoryActivity()
         }
 
         imgdiary.setOnClickListener{
-            view -> menuDiaryActivityTabbed()
+            menuDiaryActivityTabbed()
         }
 
 
         imgbreeding.setOnClickListener{
-            view -> menuBreedingActivityTabbed()
+            menuBreedingActivityTabbed()
         }
 
     }
@@ -147,8 +145,8 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
 
 
     private fun menuDiaryActivityTabbed() {
-       // val miIntent: Intent = Intent(this, DiaryActivityTabbed::class.java)
-       // startActivity(miIntent)
+        val miIntent: Intent = Intent(this, Activity_Diary_tabbed::class.java)
+        startActivity(miIntent)
     }
 
 

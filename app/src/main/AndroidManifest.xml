@@ -39,7 +39,11 @@
         <activity
             android:name=".InventoryAnimalsActivity"
             android:parentActivityName=".InventoryActivity" />
-        <activity android:name=".Activity_list_breeding_pathology_recycler"></activity>
+        <activity android:name=".Activity_list_breeding_pathology_recycler" />
+        <activity
+            android:name=".Activity_Diary_tabbed"
+            android:label="@string/title_activity__diary_tabbed"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
