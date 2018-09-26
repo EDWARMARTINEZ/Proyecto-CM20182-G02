@@ -147,8 +147,8 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
 
 
     private fun menuDiaryActivityTabbed() {
-        val miIntent: Intent = Intent(this, DiaryActivityTabbed::class.java)
-        startActivity(miIntent)
+       // val miIntent: Intent = Intent(this, DiaryActivityTabbed::class.java)
+       // startActivity(miIntent)
     }
 
 

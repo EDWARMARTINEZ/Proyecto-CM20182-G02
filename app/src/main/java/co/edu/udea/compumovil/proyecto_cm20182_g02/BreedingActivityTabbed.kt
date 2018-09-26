@@ -14,6 +14,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import co.edu.udea.compumovil.proyecto_cm20182_g02.R.id.toolbar
 
 import kotlinx.android.synthetic.main.activity_breeding_tabbed.*
 import kotlinx.android.synthetic.main.fragment_breeding_activity_tabbed.view.*
@@ -49,7 +50,13 @@ class BreedingActivityTabbed : AppCompatActivity() {
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                     .setAction("Action", null).show()
         }
+        setupActionBar()
+    }
 
+    private fun setupActionBar() {
+        val actionBar = supportActionBar
+        actionBar?.setDisplayHomeAsUpEnabled(true)
+        //actionBar?.setTitle("Inventario")
     }
 
 
@@ -97,5 +104,7 @@ class BreedingActivityTabbed : AppCompatActivity() {
 
         }
     }
+
+
 
 }

@@ -31,26 +31,15 @@
         <activity
             android:name=".InventoryActivity"
             android:parentActivityName=".NavigationDrawerActivity" />
-
-        <activity
-            android:name=".DiaryActivityTabbed"
-            android:label="@string/title_activity_diary_tabbed"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
         <activity
             android:name=".BreedingActivityTabbed"
             android:label="@string/title_activity_breeding_tabbed"
+            android:parentActivityName=".NavigationDrawerActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity android:name=".InventoryAnimalsActivity"
-        android:parentActivityName=".InventoryActivity" />
-
+        <activity
+            android:name=".InventoryAnimalsActivity"
+            android:parentActivityName=".InventoryActivity" />
+        <activity android:name=".Activity_list_breeding_pathology_recycler"></activity>
     </application>
 
 </manifest>

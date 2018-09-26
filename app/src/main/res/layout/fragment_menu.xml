@@ -14,7 +14,8 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <ImageView
                 android:id="@+id/imgBreeding"
@@ -40,7 +41,8 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="42dp">
+            android:layout_height="42dp"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/txtBreeding"
@@ -70,7 +72,8 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <ImageView
                 android:id="@+id/imgProduct"
@@ -95,7 +98,8 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/txtProduct"

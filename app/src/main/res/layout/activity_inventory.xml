@@ -14,24 +14,25 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:gravity="center">
 
             <ImageView
                 android:id="@+id/imgAnimalsRegister"
-                android:layout_width="114dp"
-                android:layout_height="match_parent"
+                android:layout_width="85dp"
+                android:layout_height="83dp"
                 android:layout_margin="5dp"
-                android:background="@drawable/cow2"
+                android:background="@drawable/animal"
                 android:scaleType="fitCenter"
                 tools:layout_editor_absoluteX="41dp"
                 tools:layout_editor_absoluteY="28dp" />
 
             <ImageView
                 android:id="@+id/imgDiary"
-                android:layout_width="91dp"
-                android:layout_height="109dp"
+                android:layout_width="86dp"
+                android:layout_height="88dp"
                 android:layout_margin="5dp"
-                android:background="@drawable/diary2"
+                android:background="@drawable/suply"
                 android:scaleType="fitCenter"
                 tools:layout_editor_absoluteX="41dp"
                 tools:layout_editor_absoluteY="28dp" />
@@ -40,7 +41,8 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="42dp">
+            android:layout_height="42dp"
+            android:gravity="center">
 
             <TextView
                 android:id="@+id/txtBreeding"
