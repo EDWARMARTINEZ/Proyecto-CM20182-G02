@@ -71,7 +71,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="@color/accent_material_light_1"
-                android:text="@string/action_sign_in"
+                android:text="@string/action_sign_in2"
                 android:textColor="@android:color/background_light"
                 android:textStyle="bold" />
 

@@ -23,7 +23,7 @@
             android:background="?attr/colorPrimary"
             app:layout_scrollFlags="scroll|enterAlways"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:title="@string/s_breeding">
+            app:title="@string/s_breeding_2">
 
         </android.support.v7.widget.Toolbar>
 

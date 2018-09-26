@@ -43,6 +43,12 @@
         <activity
             android:name=".Activity_Diary_tabbed"
             android:label="@string/title_activity__diary_tabbed"
+            android:parentActivityName=".NavigationDrawerActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity__product_tabbed"
+            android:label="@string/title_activity__product_tabbed"
+            android:parentActivityName=".NavigationDrawerActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

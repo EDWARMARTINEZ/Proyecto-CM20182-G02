@@ -35,4 +35,14 @@
     <string name="s_observation">Observación</string>
     <string name="s_genero_animal">Género</string>
     <string name="s_race_animal">Raza</string>
+    <string name="s_gender_animal">Genero</string>
+    <string name="s_schedule_diary">Programar Agenda</string>
+    <string name="s_consult_diary">Consultar Agenda</string>
+    <string name="s_breeding_diary">Cria Agenda</string>
+    <string name="s_diary_2">Agendar</string>
+    <string name="s_breeding_2">Cria</string>
+    <string name="s_product_tabbed">Gestionar Producto</string>
+    <string name="s_register_product">Registrar</string>
+    <string name="s_consult_product">Consulta</string>
+    <string name="action_sign_in2">Iniciar sesión</string>
 </resources>

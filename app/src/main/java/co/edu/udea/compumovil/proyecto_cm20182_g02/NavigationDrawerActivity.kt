@@ -11,6 +11,7 @@ import android.view.MenuItem
 import android.widget.ImageView
 import kotlinx.android.synthetic.main.activity_navigation_drawer.*
 import kotlinx.android.synthetic.main.app_bar_navigation_drawer.*
+import kotlinx.android.synthetic.main.fragment_menu.*
 
 
 class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -114,6 +115,7 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
         val imgventory = findViewById<ImageView>(R.id.imgInventory)
         val imgdiary = findViewById<ImageView>(R.id.imgDiary)
         val imgbreeding = findViewById<ImageView>(R.id.imgBreeding)
+        val imgproduct = findViewById<ImageView>(R.id.imgProduct)
 
         imgventory.setOnClickListener{
             menuInventoryActivity()
@@ -127,6 +129,11 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
         imgbreeding.setOnClickListener{
             menuBreedingActivityTabbed()
         }
+
+        imgproduct.setOnClickListener{
+            menuProudctActivityTabbed()
+        }
+
 
     }
 
@@ -155,6 +162,10 @@ class NavigationDrawerActivity : AppCompatActivity(), NavigationView.OnNavigatio
         startActivity(miIntent)
     }
 
+    private fun menuProudctActivityTabbed() {
+        val miIntent: Intent = Intent(this, Activity__product_tabbed::class.java)
+        startActivity(miIntent)
+    }
 
 
 }

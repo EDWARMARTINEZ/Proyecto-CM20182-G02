@@ -14,10 +14,10 @@ import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 
-import kotlinx.android.synthetic.main.activity__diary_tabbed.*
-import kotlinx.android.synthetic.main.fragment_activity__diary_tabbed.view.*
+import kotlinx.android.synthetic.main.activity__product_tabbed.*
+import kotlinx.android.synthetic.main.fragment_activity__product_tabbed.view.*
 
-class Activity_Diary_tabbed : AppCompatActivity() {
+class Activity__product_tabbed : AppCompatActivity() {
 
     /**
      * The [android.support.v4.view.PagerAdapter] that will provide
@@ -31,7 +31,7 @@ class Activity_Diary_tabbed : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity__diary_tabbed)
+        setContentView(R.layout.activity__product_tabbed)
 
         setSupportActionBar(toolbar)
         // Create the adapter that will return a fragment for each of the three
@@ -49,12 +49,13 @@ class Activity_Diary_tabbed : AppCompatActivity() {
     private fun setupActionBar() {
         val actionBar = supportActionBar
         actionBar?.setDisplayHomeAsUpEnabled(true)
-     //   actionBar?.setTitle("Inventario")
+        //   actionBar?.setTitle("Inventario")
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.menu_activity__diary_tabbed, menu)
+        menuInflater.inflate(R.menu.menu_activity__product_tabbed, menu)
         return true
     }
 
@@ -86,7 +87,7 @@ class Activity_Diary_tabbed : AppCompatActivity() {
 
         override fun getCount(): Int {
             // Show 3 total pages.
-            return 2
+            return 3
         }
     }
 
@@ -97,7 +98,7 @@ class Activity_Diary_tabbed : AppCompatActivity() {
 
         override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                                   savedInstanceState: Bundle?): View? {
-            val rootView = inflater.inflate(R.layout.fragment_activity__diary_tabbed, container, false)
+            val rootView = inflater.inflate(R.layout.fragment_activity__product_tabbed, container, false)
             rootView.section_label.text = getString(R.string.section_format, arguments?.getInt(ARG_SECTION_NUMBER))
             return rootView
         }
